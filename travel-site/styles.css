@@ -1,0 +1,113 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #2b2839;
+}
+
+/* HERO */
+#top {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("stuttgart.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 0;
+}
+
+.section.alt {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.picture {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .picture {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 16px 12px 8px;
+}
+
+.card p {
+    margin: 0 16px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 30px 10px;
+    font-size: 0.9rem;
+    background-color: #111;
+    color: #ccc;
+}
+
+.site-footer a {
+    color: #ffc4d6;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}

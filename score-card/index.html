@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard Pro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="timer-section">
+        <h2 id="timer-display">12:00</h2>
+        <button id="start-btn" onclick="startTimer()">Start</button>
+        <button id="pause-btn" onclick="pauseTimer()">Pause</button>
+      </div>
+      <div class="teams-wrapper">
+        <div class="team-section">
+          <h3 class="team-title" id="home-name">HOME</h3>
+          <div class="score-box" id="home-score">0</div>
+          <div class="button-group">
+            <button onclick="add1Home()">+1</button>
+            <button onclick="add2Home()">+2</button>
+            <button onclick="add3Home()">+3</button>
+          </div>
+        </div>
+
+        <div class="team-section">
+          <h3 class="team-title" id="guest-name">GUEST</h3>
+          <div class="score-box" id="guest-score">0</div>
+          <div class="button-group">
+            <button onclick="add1Guest()">+1</button>
+            <button onclick="add2Guest()">+2</button>
+            <button onclick="add3Guest()">+3</button>
+          </div>
+        </div>
+      </div>
+
+      <button id="reset-btn" onclick="reset()">New Game</button>
+      <button onclick="changeHomeName()" class="change-name">
+        Change Home Name
+      </button>
+      <button onclick="changeGuestName()" class="change=name">
+        Change Guest Name
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

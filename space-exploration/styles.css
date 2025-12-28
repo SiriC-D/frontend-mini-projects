@@ -1,0 +1,61 @@
+#hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("space.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    margin: 0px;
+    color: white;  
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    background-color: #05070a;
+    letter-spacing: 1px;
+}
+h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.btn{
+    border: none;
+    background-color: white;
+    color: #1a1a1a;
+    padding: 10px 24px;
+    font-family: inherit;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #e6eef7;
+    transform: scale(1.05);
+}
+.btn:active{
+    transform: translateY(4px);
+}
+.btn:focus {
+    outline: 2px solid #82a5ca;
+    outline-offset: 2px;
+}
+#main-logo{
+    width: 200px;
+    filter:brightness(2)
+}
+
+.underline{
+    border-bottom: 4px solid white;
+}
+.shadow{
+    text-shadow: 0px 0px 4px black;
+}
+#footer-text{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
